@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2do TP Integral Responsive</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/supertux.png" type="image/x-icon">
+</head>
+
+<!-- 
+    para seleccionar todas las palabras que sean iguales:
+CRTL + SHIFT + L
+
+
+para ocultar la barra izquierda:
+CRTL + B
+
+para ocultar todo y solo dejar el codigo:
+CRTL + k , soltar y luego "Z"  ---(ESC: para salir)
+
+
+para ir a distintas partes del codigo:
+CRTL + P 
+-(si borras el "@" salen los archivos, si lo agregas nuevamente
+ mostrara todas las partes del codigo)
+
+-(si borras el arroba y pones ":" y luego un numero, te llevara 
+  a la linea de ese numero)
+
+
+IMPORTANTE: seleccionas el codigo y luego:
+CRTL + L + L  
+..(2 veces "L", luego en la barra que se abre
+   se puede poner la etiquetas que quieras)
+Ejemplo:  ul>li>a  ...
+
+
+para pasar de una pestaña a otra (eje: de html a css)
+CRTL + TAB
+
+
+para copiar y pegar una etiqueta rapido:
+SHIFT + ALT + P
+
+
+para configurar atajos:
+CRTL + K + S
+
+
+para poner varios cursores a la vez:
+CRTL + SHIFT + (flecha arriba o abajo)
+o mas facil:
+SHIFT + ALT + (click mouse manteniendo hacia arriba o abajo)
+
+
+poner todo en mayuscula, seleccionas con multiplecursor y:
+CTRL + SHIFT + M
+
+
+poner todo en minuscula, seleccionas con multiplecursor y:
+CTRL + SHIFT + N
+
+
+para seleccionar varias palabras diferentes de longitudes:
+ATL + DOBLE CLICK sobre cada palabra
+
+
+seleccionar todas las etiquetas iguales:
+te posicionas sobre la etiqueta y:  
+CRTL + D
+
+
+para seleccionar open y cierre de una etiqueta:
+te paras arriba y:   CRTL + tecla "F2"
+
+
+para cambiar el nombre de todas las etiquetas de igual nombre
+o de toda una clase donde se utilice sus instancias:
+te paras arriba y:   tecla "F2".
+
+
+para dejar un mensaje con bookmarks:
+ALT + X
+
+para seleccionar todo el texto:
+CTRL + A
+
+eliminar una linea entera:
+CTRL + ALT + K
+ -->
+
+<body>
+
+    <!-- Inicio de cabecera -->
+    <header id="header">
+        <div class="wrap">
+            <div id="logo">
+                <span class="gear">S</span>
+                <h3>BLOG</h3>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">FORMACIÓN</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Fin de cabecera -->
+
+
+
+    <section class="wrap">
+        <section id="info">
+
+            <!-- Inicio banner -->
+            <div id="banner">
+                <h1>CURSO DE DESARROLLO WEB CSS MASTER</h1>
+            </div>
+            <!-- Fin banner -->
+
+            <!-- Inicio Tarjetas -->
+            <div id="cards">
+                <div class="card">
+                    <p class="icon">H</p>
+                    <h2 class="category">Desarrollo Web</h2>
+                    <p class="description">Aprende los principales lenguajes para desarrollar webs ¡Convierte en un webmaster!</p>
+                </div>
+
+                <div class="card">
+                    <p class="icon">_</p>
+                    <h2 class="category">Sistema Operativo</h2>
+                    <p class="description">Aprende a administrar sistemas Linux y Windows</p>
+                </div>
+
+                <div class="card">
+                    <p class="icon">S</p>
+                    <h2 class="category">Hadware</h2>
+                    <p class="description">Conoce los entresijos del hadware.</p>
+                </div>
+
+                <div class="card">
+                    <p class="icon">u</p>
+                    <h2 class="category">Redes e Internet</h2>
+                    <p class="description">Aprende a configurar y administrar redes informaticas y servidores.</p>
+                </div>
+
+                <div class="card">
+                    <p class="icon">a</p>
+                    <h2 class="category">Bases de datos</h2>
+                    <p class="description">Aprende a montar y administrar bases de datos.</p>
+                </div>
+            </div>
+            <!-- Fin Tarjetas -->
+        </section>
+
+        <!-- Inicio barra lateral -->
+        <div class="clearfix"></div>
+        <aside id="lateral">
+            <h3>BUSCAR</h3>
+            <div id="search">
+                <form>
+                    <input type="text">
+                    <input type="button" value="L" class="icon">
+                </form>
+            </div>
+
+            <h3>LOGIN</h3>
+            <div id="login" class="aside-box">
+                <form>
+                    <label id="user" class="icon">U</label>
+                    <input type="email" required placeholder="Ingrese email">
+
+                    <label id="password" class="icon">w</label>
+                    <input type="password" required placeholder="Ingrese password">
+
+                    <input type="submit" value="Entrar">
+                    <input type="reset" value="Limpiar">
+
+                    <a href="#">Registrate aquí</a>
+                    <a href="#">¿Has olvidado tu contraseña?</a>
+                </form>
+            </div>
+
+            <h3>REDES SOCIALES</h3>
+            <div id="social" class="aside-box">
+                <div class="twitter">
+                    <a href="#" class="icon">t</a>
+                    <p class="overlay">TWITTER</p>
+                </div>
+                <div class="facebook">
+                    <a href="#" class="icon">f</a>
+                    <p class="overlay">FACEBOOK</p>
+                </div>
+                <div class="youtube">
+                    <a href="#" class="icon">y</a>
+                    <p class="overlay">YOUTUBE</p>
+                </div>
+            </div>
+
+            <h3>COLABORADORES</h3>
+            <div id="sponsors" class="aside-box">
+
+            </div>
+        </aside>
+        <!-- Fin barra lateral -->
+
+        <!-- Inicio articulos -->
+        <section id="articles">
+            <h2>ÚLTIMOS ARTICULOS</h2>
+            <div class="clearfix"></div>
+            <article>
+                <div class="data">
+                    <span>Fecha: 12 dic</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#">Titulo del artículo</a>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in impedit quam ex, animi nostrum molestias sunt amet hic vitae, non voluptatibus consequuntur reiciendis temporibus corrupti tempore asperiores voluptate beatae?
+                </p>
+            </article>
+
+            <article>
+                <div class="data">
+                    <span>Fecha: 12 dic</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#">Titulo del artículo</a>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in impedit quam ex, animi nostrum molestias sunt amet hic vitae, non voluptatibus consequuntur reiciendis temporibus corrupti tempore asperiores voluptate beatae?
+                </p>
+            </article>
+
+            <article>
+                <div class="data">
+                    <span>Fecha: 12 dic</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#">Titulo del artículo</a>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in impedit quam ex, animi nostrum molestias sunt amet hic vitae, non voluptatibus consequuntur reiciendis temporibus corrupti tempore asperiores voluptate beatae?
+                </p>
+            </article>
+
+            <article>
+                <div class="data">
+                    <span>Fecha: 12 dic</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#">Titulo del artículo</a>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in impedit quam ex, animi nostrum molestias sunt amet hic vitae, non voluptatibus consequuntur reiciendis temporibus corrupti tempore asperiores voluptate beatae?
+                </p>
+            </article>
+
+            <article>
+                <div class="data">
+                    <span>Fecha: 12 dic</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#">Titulo del artículo</a>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in impedit quam ex, animi nostrum molestias sunt amet hic vitae, non voluptatibus consequuntur reiciendis temporibus corrupti tempore asperiores voluptate beatae?
+                </p>
+            </article>
+            <article id="blog">
+                <a href="#">IR AL GLOG</a>
+            </article>
+        </section>
+        <!-- Fin articulos -->
+    </section>
+
+    <!-- Inicio de pie de página -->
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <div class="wrap">
+
+            <div id="menu-footer">
+                <h5>MENÚ</h5>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Formación</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div id="location">
+                <h5>¿DONDE ESTAMOS?</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.4998303529374!2d-60.69275118487872!3d-31.620162381336755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9e5917c2bef%3A0x1d2e233c25e92450!2sMarcial%20Candioti%205363%2C%20S3002%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1590617907083!5m2!1ses-419!2sar"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <div id="info">
+                <h5>DESARROLLADO CON</h5>
+
+                <p>
+                    <img title="HTML SAPBE!" src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="imagen de html">
+                </p>
+
+                <h5>OPTIMIZADO PARA</h5>
+                <p id="browsers">
+                    <a href="#"><img src="img/firefox-icon.png" alt="imagen firexof"></a>
+                    <a href="#"><img src="img/chrome.png" alt="imagen chrome"></a>
+                    <a href="#"><img src="img/Opera_256x256.png" alt="imagen opera"></a>
+                    <a href="#"><img src="img/safari.png" alt="imagen safari"></a>
+                    <a href="#"><img src="img/android.png" alt="imagen android"></a>
+                    <a href="#"><img src="img/ios.png" alt="imagen ios"></a>
+                </p>
+
+                <h5>AUTOR</h5>
+                <p id="autor">&copy; David Leonel Web - MASTER EN CSS</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Fin de pie de página -->
+
+</body>
+
+</html>
